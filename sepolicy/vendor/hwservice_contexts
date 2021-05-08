@@ -1,2 +1,0 @@
-vendor.synaptics.fingerprint.interfaces.extensions::ISteller         u:object_r:hal_fingerprint_hwservice:s0
-vendor.synaptics.fingerprint.interfaces.extensions::ISensorTest      u:object_r:hal_fingerprint_hwservice:s0
