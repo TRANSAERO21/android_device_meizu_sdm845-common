@@ -1,3 +1,0 @@
-allow hal_lineage_touch_default sysfs_touchpanel_gestures:file rw_file_perms;
-allow hal_lineage_touch_default touchpanel_gestures_device:dir ra_dir_perms;
-allow hal_lineage_touch_default touchpanel_gestures_device:fifo_file create_file_perms;

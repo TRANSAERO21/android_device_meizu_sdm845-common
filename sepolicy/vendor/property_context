@@ -1,2 +1,0 @@
-# FastCharge HAL
-persist.vendor.sec.fastchg_enabled     u:object_r:vendor_fastcharge_prop:s0

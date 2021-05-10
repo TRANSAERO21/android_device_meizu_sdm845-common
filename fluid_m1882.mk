@@ -13,11 +13,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, device/meizu/sdm845/m1882/m1882.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+
+# GApps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Credits to XiNGRZ
 
-PRODUCT_NAME := lineage_m1882
+PRODUCT_NAME := fluid_m1882
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1882
 PRODUCT_MANUFACTURER := Meizu
@@ -31,3 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="meizu_16th_CN-user 10 QKQ1.191222.002 1594833800 release-keys"
 
 BUILD_FINGERPRINT := meizu/qssi/qssi:10/QKQ1.191222.002/1594833800:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=umtlh \
+  ro.fluid.cpu=SDM845
